@@ -2,30 +2,30 @@
 Git is a distributed Version Control System VCS tool used to versioning, collaboration of a project
 
 ### Some usefull git commands
-git init // This command initialize folder as a git repository
-git status // check current status including in which branch currently the HEAD pointing to and the information of changes to be staged
-git add . // start tracking changes in all the files (add to staging area)
-git add [filename] // only add specific file to staging area
-git reset // only reset from staged to unstage all files
-git reset [filename] // only reset specific file but not remove modifications of file
-git reset --hard // reset from staged to unstaged also remove modifications from all files
-git checkout HEAD [filename] // remove modifications of specific file before commit in stage/unstage
-git commit -m "[message]" // commit to local repository
-git push // push changes to the upstream remote repository (best practice is to use local repo name and branch name e.g git push origin main)
-git fetch // fetch the changes from remote repository but not merge with local repository.
-git merge // merge the fetched changes (from command git fetch) to local repository.
-git pull // fetch and merge the changes from the upstream remote to local repository (best practice is to use local repo name and branch name e.g git pull origin main)
+- git init ~ This command initialize folder as a git repository
+- git status ~ check current status including in which branch currently the HEAD pointing to and the information of changes to be staged
+- git add . ~ start tracking changes in all the files (add to staging area)
+- git add [filename] ~ only add specific file to staging area
+- git reset ~ only reset from staged to unstage all files
+- git reset [filename] ~ only reset specific file but not remove modifications of file
+- git reset --hard ~ reset from staged to unstaged also remove modifications from all files
+- git checkout HEAD [filename] ~ remove modifications of specific file before commit in stage/unstage
+- git commit -m "[message]" ~ commit to local repository
+- git push ~ push changes to the upstream remote repository (best practice is to use local repo name and branch name e.g git push origin main)
+- git fetch ~ fetch the changes from remote repository but not merge with local repository.
+- git merge ~ merge the fetched changes (from command git fetch) to local repository.
+- git pull ~ fetch and merge the changes from the upstream remote to local repository (best practice is to use local repo name and branch name e.g git pull origin main)
 To pull another branch present in remote but not in local then use one of these methods:
 
-git pull origin (remote-branch-name) and checkout into it // it will merge ahead commits to active branch (if any)
-git fetch origin (remote-branch-name) and checkout into it
-git switch -c (branch-name) origin/(branch-name) //it will create and switched to new branch available at remote(BUT before running this command you need to run git pull command first at any other active branch)
-git branch -M [branch-name] // change active/working branch name e.g git branch -M main
-git remote add [set-repo-name] [url] // connect local repo to remote repo e.g git remote add origin (link)
-git remote -v // show the remotely connected repo url to local repo
-git push -u [repo-name] [branch-name] // push all local commits to specific branch of remote repo (here -u flag create upstream so that to use only git push command without mentioning repo/branch name worth noting that here (repo-name) is not the actual name of remote repo and if branch doesn't exist on remote then it will create another branch of this name on remote repo)
-git remote show // display the locel name of connected repo
-git remote show [repo-name] // show the status of remote repo e.g git remote show origin
+- git pull origin (remote-branch-name) and checkout into it ~ it will merge ahead commits to active branch (if any)
+- git fetch origin (remote-branch-name) and checkout into it
+ - git switch -c (branch-name) origin/(branch-name) ~ it will create and switched to new branch available at remote(BUT before running this command you need to run git pull command first at any other active branch)
+ - git branch -M [branch-name] ~ change active/working branch name e.g git branch -M main
+- git remote add [set-repo-name] [url] ` connect local repo to remote repo e.g git remote add origin (link)
+ - git remote -v ~ show the remotely connected repo url to local repo
+- git push -u [repo-name] [branch-name] ~ push all local commits to specific branch of remote repo (here -u flag create upstream so that to use only git push command without mentioning repo/branch name worth noting that here (repo-name) is not the actual name of remote repo and if branch doesn't exist on remote then it will create another branch of this name on remote repo)
+- git remote show ~ display the local name of connected repo
+- git remote show [repo-name] ~ show the status of remote repo e.g git remote show origin
 
 
 
